@@ -1,0 +1,215 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+li{
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+
+/* @keyframes grow {
+    0% {
+        border-bottom: 2px solid blue;
+        border-bottom-width: 0;
+        border-spacing: 10px;
+    }
+    50%{
+        border-bottom: 2px solid blue;
+        border-bottom-width: 10px;
+        border-spacing: 10px;
+    }
+    to {
+        border-bottom: 2px solid blue;
+        border-bottom-width: 50px;
+    }
+}  */
+
+.nav-items li:hover {
+    /* animation-name: grow;
+    animation-duration: 10s;
+    animation-fill-mode: forwards; */
+    border-bottom: 2px solid rgb(3, 3, 85);
+}
+
+.cards:hover{
+    transform: scale(1.1);
+    transition: transform 1s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+}
+.cards p {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+.btn:hover{
+    transform: scale(1);
+    transition: transform 1s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+}
+.btn:active{
+    transform: scale(0.7);
+    transition: transform .5s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+}
+
+.herosection-description{
+    text-align: justify;
+}
+
+.project-card{
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.17);
+
+    position: relative;
+    bottom: 50px;
+}
+@keyframes hovering {
+    0%{
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.17);
+    }
+    100%{
+        box-shadow: 0px 4px 20px 5px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.17);
+    }
+}
+.project-card:hover{
+    animation-name: hovering;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+/* .project-image{
+    position: relative;
+    width: 200px;
+    height: 50%;
+} */
+
+.project-btn:hover{
+    transform: scale(1);
+    transition: transform 0.5s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+}
+.project-btn:active{
+    transform: scale(0.8);
+    transition: transform .3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+}
+
+.menu-item h1:hover{
+    border-radius: 10px;
+    background-color: rgb(2, 2, 70);
+    color: antiquewhite;
+}
+.project-title, .project-stack{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.herosection-desc{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.herosection-img{
+    display: flex;
+    justify-content: flex-start;
+}
+
+@keyframes grow {
+    0% {
+        left: 100%
+    }
+    to {
+        left: 30%
+    }
+} 
+.menu{
+    animation-name: grow;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+@keyframes extend {
+    0% {
+        min-height: 130px;
+        .nic{
+            opacity:0;
+        }
+    }
+    100% {
+        min-height: 354px;
+        .nic{
+            opacity:0;
+        }
+    }
+} 
+@keyframes unextend {
+    0% {
+        min-height: 354px;
+        .nic{
+            opacity:0;
+        }
+    }
+    100% {
+        min-height: 130px;
+        .nic{
+            opacity:0;
+        }
+    }
+} 
+@keyframes reveal {
+    0% {
+        opacity:0;
+        height: 40px;
+        overflow: hidden;
+    }
+    75% {
+        opacity:1;
+        height: 200px;
+        overflow: hidden;
+    }
+    100% {
+        opacity:1;
+        height: 100%;
+        overflow: visible;
+    }
+}
+@keyframes unreveal {
+    0% {
+        opacity:1;
+        height: 100%;
+        overflow: visible;
+    }
+    75% {
+        opacity:1;
+        height: 200px;
+        overflow: hidden; 
+    }
+    100% {
+        opacity:0;
+        height: 40px;
+        overflow: hidden;
+    }
+}
+
+/* .niyi { 
+    height: 200px;
+    .nic {
+        opacity: 0;
+    }
+} */
+
+.expand {
+    animation-name: extend;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+    .nic {
+        animation-name: reveal;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+}
+.unexpand {
+    animation-name: unextend;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+    .nic {
+        animation-name: unreveal;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+}
