@@ -15,6 +15,23 @@ export const ContextProvider = ({children}) => {
     }
     const closeMenu = () => setMenu(false)
 
+    async function sendEmail() {
+        const form = document.getElementById('contact-form');
+        const formData = new FormData(form);
+    
+        const response = await fetch('http://localhost:5000/send-email', {
+          method: 'POST',
+          body: JSON.stringify(Object.fromEntries(formData)),
+          headers: { 'Content-Type': 'application/json' },
+        });
+    
+        if (response.ok) {
+          alert('Email sent successfully!');
+        } else {
+          alert('Failed to send email.');
+        }
+      }
+
  return (
     <stateContext.Provider
         value={{
@@ -24,7 +41,8 @@ export const ContextProvider = ({children}) => {
             handleResize,
             openMenu,
             closeMenu,
-            menu
+            menu,
+            sendEmail
         }}
     >
         {children}

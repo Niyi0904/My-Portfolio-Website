@@ -28,7 +28,7 @@ const Projects = () => (
                     <div className="relative left-4">
                         <h1 className="relative top-0 font-medium project-stack text-md italic text-gray-500">{projects.projectStack}</h1>
                     </div>
-                    <div className="relative left-[85%]">
+                    <div className="relative left-[85%] w-10">
                         <a href={projects.projectLink}>
                             <BsFillArrowUpRightCircleFill className="text-4xl text-right" />
                         </a>
