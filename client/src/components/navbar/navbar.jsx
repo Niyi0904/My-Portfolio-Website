@@ -26,7 +26,12 @@ const Navbar = () =>  {
   return (
     <div className="fixed w-full z-20 mb-11">
         <nav className="flex justify-between bg-gray-50 text-blue-950 space-x-4 h-12 lg:h-14 xl:h-14">
-            <div className="relative left-[5%] top-2 text-3xl xs:text-2xl font-extrabold font-sans ">Nidavtech</div>
+            <div className="flex relative left-[5%] top-2 text-3xl xs:text-2xl font-extrabold font-sans ">
+              <div className="pr-2 rounded-xl">
+                <img className="w-10 rounded-xl" src="https://i.ibb.co/ZTg26R9/logo.jpg" alt="my imgage"/>
+              </div>
+              <p>Nidavtech</p>
+            </div>
             {
                 menubar ? <div className="flex relative right-[5%] top-3">
                   <p className="relative right-3 text-sm">Menu</p>

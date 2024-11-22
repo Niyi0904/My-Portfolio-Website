@@ -15,6 +15,12 @@ export const ContextProvider = ({children}) => {
     }
     const closeMenu = () => setMenu(false)
 
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+    const [message, setMessage] = useState('');
+
+
     async function sendEmail() {
         const form = document.getElementById('contact-form');
         const formData = new FormData(form);
