@@ -4,5 +4,9 @@
     "cors": "^2.8.5",
     "express": "^4.21.1",
     "nodemailer": "^6.9.16"
-  }
+  },
+  "scripts": {
+  "start": "node server.js",
+  "dev": "nodemon server.js"
+}
 }
