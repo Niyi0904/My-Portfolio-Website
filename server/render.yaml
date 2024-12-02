@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: niyi-server
-    env: node
-    buildCommand: npm install
-    startCommand: npm start
-    plan: free
