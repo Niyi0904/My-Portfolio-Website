@@ -12,16 +12,25 @@ const Contact = () => {
             {isLoading && <IsLoading/>}
             <div className="relative ">
                 <form id="contact-form">
-                    <div className="xs:flex xs:flex-col sm:flex sm:flex-col">
-                        <input value={name} onChange={handleName} type="text" name="name" placeholder="Name" required  className="h-10 pl-2 mr-10 rounded-lg text-white bg-blue-950 sm:mb-4 sm:w-80 xs:mb-4 xs:w-80"/>
+                    <div className="flex xs:flex xs:flex-col sm:flex sm:flex-col">
+                        <div className="flex flex-col">
+                            <h1 className="text-gray-400">Name</h1>
+                            <input value={name} onChange={handleName} type="text" name="name" placeholder="Name" required  className="h-10 pl-2 mr-10 rounded-lg text-gray-700 bg-white border-2 border-gray-700 sm:mb-4 sm:w-80 xs:mb-4 xs:w-80"/>
+                        </div>
 
-                        <input value={email} onChange={handleEmail} type="email" name="email" placeholder="Email" required className="h-10 pl-2 mr-10 rounded-lg text-white bg-blue-950 sm:mb-4 sm:w-80 xs:mb-4 xs:w-80"/>
+                        <div className="flex flex-col">   
+                            <h1 className="text-gray-400">Email</h1>
+                            <input value={email} onChange={handleEmail} type="email" name="email" placeholder="Email" required className="h-10 pl-2 mr-10 rounded-lg text-gray-700 bg-white border-2 border-gray-700 sm:mb-4 sm:w-80 xs:mb-4 xs:w-80"/>
+                        </div>
 
-                        <input value={phone} onChange={handlePhone} type="tel" name="phone" placeholder="Phone Number" required className="h-10 pl-2 mr-10 rounded-lg text-white bg-blue-950 sm:w-80  xs:w-80"/>
+                        <div className="flex flex-col">
+                            <h1 className="text-gray-400">Phone</h1>
+                            <input value={phone} onChange={handlePhone} type="tel" name="phone" placeholder="Phone Number" required className="h-10 pl-2 mr-10 rounded-lg text-gray-700 bg-white border-2 border-gray-700 sm:w-80  xs:w-80"/>
+                        </div>
                     </div>
 
                     <div className="flex justify-center mt-16 relative">
-                        <textarea value={message} onChange={handleMessage} name="message" placeholder="Your Message" required className="w-96 h-44 pl-2 pt-3 rounded-lg text-white bg-blue-950"></textarea>
+                        <textarea value={message} onChange={handleMessage} name="message" placeholder="Your Message" required className="w-96 h-44 pl-2 pt-3 rounded-lg text-gray-700 bg-white border-2 border-gray-700"></textarea>
                     </div>
 
                     <div className="flex justify-center mt-16" >

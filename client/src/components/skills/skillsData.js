@@ -18,6 +18,12 @@ export const skillsData = [
         icon: "https://i.ibb.co/HFXzw4P/database-Icon.png",
         title: 'BACKEND DEVELOPMENT',
         description: 'Highly skilled front-end developer with expertise in crafting responsive,     intuitive, and visually stunning user interfaces. Proficient in translating design into functional and engaging web experience.'
+    },
+    {
+        id: 4,
+        icon: "https://i.ibb.co/HFXzw4P/database-Icon.png",
+        title: 'UI/UX DESIGN',
+        description: 'Highly skilled front-end developer with expertise in crafting responsive,     intuitive, and visually stunning user interfaces. Proficient in translating design into functional and engaging web experience.'
     }
 ];
 

@@ -17,7 +17,7 @@ const SideBar = () => {
                     </h1>  
                     <h1>
                         <Link to="skills" smooth={true} duration={500} onClick={closeMenu}>
-                            Skills
+                            About Me
                         </Link>
                     </h1>
                     <h1>
@@ -32,7 +32,7 @@ const SideBar = () => {
                     </h1>
                     <h1>
                         <Link to="contacts" smooth={true} duration={500} onClick={closeMenu}>
-                            Contacts
+                            My Blog
                         </Link>
                     </h1>
                 </div>

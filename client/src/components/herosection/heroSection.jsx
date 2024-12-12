@@ -1,5 +1,9 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { FaLinkedin, FaGithubSquare,FaWhatsapp, FaFacebook} from "react-icons/fa";
+import { VscGithub } from "react-icons/vsc";
+
+
 
 import Buttons from "../buttons/button";
 
@@ -12,12 +16,17 @@ const HeroSection = () =>  {
     <div className="grid xs:flex grid-cols-2 xs:flex-col-reverse h-full rounded-b-xl py-12 sm:px-10 px-28 xs:px-0 justify-center items-center gap-x-16">
         <div className="relative leading-8 xs:leading-7 xs:w-[90%] w-[80%] xs:top-[10%]">
             <p>Hi, My Name is</p>
-            <h1 className="text-2xl relative font-bold text-blue-400 mt-2">Owoyemi Niyi</h1>
+            <h1 className="text-2xl relative font-bold text-blue-400 mt-2">Owoyemi Niyi | <span className="text-blue-300">Frontend Developer</span></h1>
             <div>
 
             </div>
-            <p>I'm a detail-driven <span className="text-blue-300">Frontend Developer</span> with experience in building dynamic and scalable applications.</p>
-            <p> Proficient in Javascript, and I specialize in ReactJs framework.</p>
+            <p>I'm a detail-driven Javascript developer specializing in creating dynamic and responsive web applications</p>
+            <div className="flex gap-6 pt-3 pb-3 text-2xl">
+                <VscGithub />
+                <FaLinkedin />
+                <FaWhatsapp />
+                <FaFacebook />
+            </div>
             {/* <h1 className="text-4xl font-bold leading-10 self-stretch">Frontend Developer</h1> */}
 
             <Link to="contacts" smooth={true} duration={500} >
